@@ -1,7 +1,10 @@
 streamlit
 torch
 torchvision
-pillow
 numpy
+pillow
+pandas
+scikit-learn
 matplotlib
+seaborn
 grad-cam

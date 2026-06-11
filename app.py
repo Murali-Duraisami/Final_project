@@ -17,30 +17,9 @@ st.set_page_config(
 
 import json
 
-with open("E:\\Laptop\\Final_project\\Notebooks\\class_names.json", "r") as f:
+with open("class_names.json", "r") as f:
     class_names = json.load(f)
 
-
-#Defining clas names
-# class_names.py
-
-# #CLASS_NAMES = [
-#     'Pepper__bell___Bacterial_spot',
-#     'Pepper__bell___healthy',
-#     'Potato___Early_blight',
-#     'Potato___healthy',
-#     'Potato___Late_blight',
-#     'Tomato_Bacterial_spot',
-#     'Tomato_Early_blight',
-#     'Tomato_healthy',
-#     'Tomato_Late_blight',
-#     'Tomato_Leaf_Mold',
-#     'Tomato_Septoria_leaf_spot',
-#     'Tomato_Spider_mites_Two_spotted_spider_mite',
-#     'Tomato__Target_Spot',
-#     'Tomato__Tomato_mosaic_virus',
-#     'Tomato__Tomato_YellowLeaf__Curl_Virus'
-# ]
 
 recommendations = {
 
@@ -78,7 +57,7 @@ def load_model():
 
     model.load_state_dict(
         torch.load(
-            "E:\\Laptop\\Final_project\\Notebooks\\best_efficientnet.pth",
+            "best_efficientnet.pth",
             map_location="cpu"
         )
     )

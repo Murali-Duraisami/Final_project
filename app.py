@@ -15,7 +15,7 @@ st.set_page_config(
 
 import json
 
-with open("E:\\Laptop\\Final_project\\Notebooks\\class_names.json", "r") as f:
+with open("class_names.json", "r") as f:
     class_names = json.load(f)
 
 

@@ -55,7 +55,7 @@ def load_model():
 
     model.load_state_dict(
         torch.load(
-            "E:\\Laptop\\Final_project\\Notebooks\\best_efficientnet.pth",
+            "best_efficientnet.pth",
             map_location="cpu"
         )
     )

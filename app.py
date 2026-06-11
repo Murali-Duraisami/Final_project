@@ -195,7 +195,7 @@ if uploaded_file:
         )
 
         gradcam_image = generate_gradcam(image, pred_idx)
-        gradcam_display_width = gradcam_image.width // 2
+        gradcam_display_width = gradcam_image.width // 1.5
 
         st.subheader("Grad-CAM Heatmap")
         st.image(
